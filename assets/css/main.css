@@ -1,0 +1,235 @@
+  /*
+    CSS da Página Principal
+
+    0 - Ajustes Princiapis: faz um reset do CSS
+    1 - Bakcground
+      1.1 - Retira repetição e ajusta o background para a posição central
+    2 - Instalação de fontes externas (assets/fonts/_)
+    3 - CSS para a barra de navegação
+    4 - CSS dos textos utilizados (h*,p...)
+    5 - Seções (cria uma margem para separar cards, botões e outros...)
+    6 - Cards que ajudam a organizar a leitura e o código
+    7 - Botões
+    8 - Footer
+    9 - Ajustes extras 
+    10 - Responsividade (mobile e outros)
+  
+  */  
+  
+  
+  
+/* 0 - Ajustes principais */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Microsoft New Tai Lue';
+  vertical-align: baseline;
+}
+
+/* 1 - Background (tentativa) */
+ html,
+ body {
+   height: 100%;
+   background: transparent linear-gradient(126deg, #7A8FFF 0%, #6C8EFE 22%, #668EFD 32%, #1C89F4 100%) 0% 0% no-repeat padding-box;
+ }
+ 
+ /* 1.1 - Retira repetição do background */
+ body {
+   display: -ms-flexbox;
+   display: -webkit-box;
+   display: flex;
+   -ms-flex-pack: center;
+   -webkit-box-pack: center;
+   justify-content: center;
+   color: #fff;
+   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+ }
+ .cover-container {
+  max-width: 70em;
+}
+
+
+/* 2 - Fontes Externas */
+
+@font-face{
+  font-family:'Microsoft New Tai Lue';
+  src: url("../fonts/ntailub.ttf");
+}
+
+@font-face{
+  font-family:'Avenir, Black';
+  src: url("../fonts/avenir-lt-std-95-black.otf");
+}
+
+@font-face{
+  font-family:'AvenirLTStd-Roman';
+  src: url("../fonts/avenir-lt-std-55-roman.otf");
+}
+
+.font-avenirBlack{
+  font-family: 'Avenir, Black' !important;
+}
+.font-avenirRoman{
+  font-family: 'AvenirLTStd-Roman' !important;
+}
+
+
+/* 3 - Navbar */
+
+
+
+/* 4 - Textos*/
+
+.texto-principal{
+  text-align: left;
+  font-size: 80px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.texto-principal-enfase{
+  text-align: left;
+  font-size: 80px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.texto-descritivo {
+  margin: 20px;
+}
+.texto-simulacao { 
+  color: #3A8BF7 !important; 
+  text-align: left;
+  font-size: 80px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.texto-resultado {
+  text-align: left;
+  font-size: 60px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.texto-final {
+  color: #3A8BF7 !important; 
+  font-size: 30px;
+}
+
+/* 5 - Seções */
+
+.section {
+  margin-top: 30px;
+}
+
+/* 6- Cards */
+.card-principal {
+  margin: 30px 10px 30px 10px;
+}
+.card-resultado {
+  background: #698EFE 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.card-final{
+  background-color: #fff;;
+}
+.container-card{
+  margin: 20px;
+}
+
+
+/* 7 - Botões */
+.btn-bx {
+  border-radius: 40px;
+  background-color: #39F700;
+  border: none;
+  font-size: 35px;
+  letter-spacing: -0.9px;
+ }
+ .btn-bx:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #39F700;
+  border-color: #39F700;
+}
+.btn-final {
+  border-radius: 10px;
+  background: #F7A100;
+  border: none;
+  opacity: 1;
+ }
+ .btn-final:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  border-radius: 10px;
+  background: #F7A100;
+  border: none;
+  opacity: 1;
+}
+/* Início formulário */
+.formulario{
+  margin: 40px 0;
+  background-color: #638EFD;
+  opacity: 0.42;
+  padding: 50px;
+  border-radius: 10px;
+}
+.form-col{
+  margin-top: 15px;
+}
+@media (max-width:650px) {
+  .formulario{
+    padding: 30px;
+  }
+}
+
+
+/* 8 - Footer */
+.list-unstyled>li{
+  color: #fff !important;
+}
+
+/*
+ * 9 - Ajustes extras
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+@media print {
+  .container {
+    width: auto;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
+
+/* 10 - Responsividade */
+@media (max-width:400px) {
+	.texto-principal{
+	  font-size: 2em;
+	}
+	.texto-principal-enfase{
+		font-size: 2em;
+  }
+  .texto-simulacao{
+		font-size: 2em;
+  }
+  .texto-resultado {
+    font-size: 2em;
+  }
+  .btn-bx{
+    font-size: 1.5em !important;
+  }
+  .menu {
+    font-size: 0.7em !important;
+  }
+}
