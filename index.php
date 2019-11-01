@@ -106,12 +106,6 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12 form-col">
-                                        <textarea class="form-control" name="txtMensagem" id="txtMensagem" rows="3"
-                                            placeholder="Escreva sua mensagem"></textarea>
-                                    </div>
-                                </div>
                             </form>
                             <button type="submit" name="Enviar"
                                     class="btn btn-success btn-formulario btn-block btn-lg">DESCUBRA SEU PERFIL</button>
