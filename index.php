@@ -8,6 +8,7 @@
     <meta name="description" content="BX Invest">
     <meta name="author" content="Gama XP 26">
     <meta name="generator" content="Jekyll v3.8.5">
+    <meta name="viewport" content="width=640"/>
     <link rel="icon" href="assets/imgs/logo.png">
     <title>BX Invest</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/product/">
